@@ -36,14 +36,19 @@
 }
 /* Tabs Nav Hover */
 ul li:hover {
-    color: white;
+    color: #fff;
     cursor: pointer;
 }
 ul li:hover svg path{
-    fill: white; 
+    fill: #fff; 
 }
 /* The Active Tab */
 .active{
     border-bottom: 4px solid var(--main-red);
 }
-
+.tab-selected{
+    color: #fff;
+}
+.tab-selected svg path{
+    fill: #fff;
+}

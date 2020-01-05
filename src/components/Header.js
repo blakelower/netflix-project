@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "../logo.svg/logo.svg";
-import { NavLink, Link } from "react-router-dom";
+import {Button} from './Button';
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {Icon} from 'react-icons-kit';
 import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
@@ -19,9 +20,9 @@ class Header extends Component {
         <div className="header-content">
             <Title>Stream Now</Title>
             <Subtitle >WATCH ANYWHERE, CANCEL ANYTIME</Subtitle>
-            <Link className="main-offer-btn">TRY IT NOW
+            <Button className="main-offer-btn" primary>TRY IT NOW 
             <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
-            </Link>
+            </Button>
         </div>
       </HeaderComponent>
     );
@@ -77,7 +78,7 @@ const HeaderComponent = styled.div`
       flex-direction: column;
       z-index: 1;
   }
-  //main offer btn
+  /* //main offer btn
   .main-offer-btn{
     display: inline-block;
     background: var(--main-red);
@@ -95,7 +96,7 @@ const HeaderComponent = styled.div`
     &:hover{
         background: var(--main-red-hover);
     }
-  }
+  } */
 
   .Icon svg{
     vertical-align: bottom;
