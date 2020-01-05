@@ -1,0 +1,23 @@
+/*Tab Nav #1*/
+.tab-icon-door{
+    width: 2.8125rem;
+    height: 2.185rem;
+    fill: var(--main-grey);
+    
+}
+/*Tab Nav #2*/
+.tab-icon-devices{
+    width: 9.6875rem;
+    height: 9.6875rem;
+    fill: var(--main-grey);
+    
+}
+/*Tab Nav #3*/
+.tab-icon-price{
+    width: 2.8125rem;
+    height: 2.185rem;
+    fill: var(--main-grey); 
+}
+.tab-list{
+    list-style-type: none;
+}
