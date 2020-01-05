@@ -1,54 +1,88 @@
 /*Tab Nav #1*/
-.tab-icon-door{
-    width: 2.8125rem;
-    height: 2.185rem;
-    fill: var(--main-grey);
-    
+.tab-icon-door {
+  width: 2.8125rem;
+  height: 2.185rem;
+  fill: var(--main-grey);
+}
+/* Media Tab Nav #1 */
+@media (max-width: 900px) {
+  .tab-icon-door {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 /*Tab Nav #2*/
-.tab-icon-devices{
-    width: 9.6875rem;
-    height: 9.6875rem;
-    fill: var(--main-grey);
-    
+.tab-icon-devices {
+  width: 9.6875rem;
+  height: 9.6875rem;
+  fill: var(--main-grey);
+}
+/* Media Tab Nav #1 */
+@media (max-width: 900px) {
+  .tab-icon-devices {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 /*Tab Nav #3*/
-.tab-icon-price{
-    width: 4.375rem;
-    height: 4.375rem;
-    fill: var(--main-grey); 
+.tab-icon-price {
+  width: 4.375rem;
+  height: 4.375rem;
+  fill: var(--main-grey);
+}
+/* Media Tab Nav #1 */
+@media (max-width: 900px) {
+  .tab-icon-price {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 /* Tabs */
-.tabs{
-    padding-top: 1rem;
+.tabs {
+  padding-top: 1rem;
 }
-.tab-nav-container{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    list-style-type: none;
-    color: var(--main-grey);
-    margin: 0 12%;
+.tab-nav-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  list-style-type: none;
+  color: var(--main-grey);
+  margin: 0 12%;
 }
 /* Tabs Nav Hover */
 ul li:hover {
-    color: #fff;
-    cursor: pointer;
+  color: #fff;
+  cursor: pointer;
 }
-ul li:hover svg path{
-    fill: #fff; 
+ul li:hover svg path {
+  fill: #fff;
 }
 /* The Active Tab */
-.active{
-    border-bottom: 4px solid var(--main-red);
+.active {
+  border-bottom: 4px solid var(--main-red);
 }
-.tab-selected{
-    color: #fff;
+.tab-selected {
+  color: #fff;
 }
-.tab-selected svg path{
-    fill: #fff;
+.tab-selected svg path {
+  fill: #fff;
+}
+/* Media for Tab Nav */
+@media (min-width: 900px) {
+  .mdScreen {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .lgScreen {
+    display: none;
+  }
+  .mdScreen{
+      display: block;
+      margin-bottom: 0.4rem;
+  }
 }

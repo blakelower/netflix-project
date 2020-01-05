@@ -31,7 +31,7 @@ a{
   height: 90vh;
   position: relative;
   background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)),
-  url(../images/bg.jpg) no-repeat center center/cover;
+  url(../images/pupmovies.jpg) no-repeat center center/cover;
 }
 
 .header-container::after{
