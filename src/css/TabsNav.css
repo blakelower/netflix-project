@@ -14,10 +14,36 @@
 }
 /*Tab Nav #3*/
 .tab-icon-price{
-    width: 2.8125rem;
-    height: 2.185rem;
+    width: 4.375rem;
+    height: 4.375rem;
     fill: var(--main-grey); 
 }
-.tab-list{
-    list-style-type: none;
+
+/* Tabs */
+.tabs{
+    padding-top: 1rem;
 }
+.tab-nav-container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    list-style-type: none;
+    color: var(--main-grey);
+    margin: 0 12%;
+}
+/* Tabs Nav Hover */
+ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+ul li:hover svg path{
+    fill: white; 
+}
+/* The Active Tab */
+.active{
+    border-bottom: 4px solid var(--main-red);
+}
+
