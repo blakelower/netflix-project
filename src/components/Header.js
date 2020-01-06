@@ -13,14 +13,14 @@ class Header extends Component {
         <div className="header-top">
           {/* <Logo src={logo} alt="Netflix" /> */}
           <a href="https://fontmeme.com/netflix-font/"><Logo src="https://fontmeme.com/permalink/200105/8b9176f83255bf05070d0b0c44e708e0.png"/></a>
-          <NavLink to className="signIn-btn">
+          <NavLink to="/login" className="signIn-btn">
             SignIn
           </NavLink>
         </div>
         {/* Header Content */}
         <div className="header-content">
-            <Title>Stream Now</Title>
-            <SubTitle >WATCH ANYWHERE, CANCEL ANYTIME</SubTitle>
+            <Title>For Your Top Dog</Title>
+            <SubTitle >WATCH YOUR FAVORITE PUP MOVIE WITH YOUR PUP!</SubTitle>
             <Button className="main-offer-btn" primary>TRY IT NOW 
             <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
             </Button>
