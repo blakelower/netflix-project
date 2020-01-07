@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Button} from './Button';
+import {Link} from 'react-router-dom';
 import {Icon} from 'react-icons-kit';
 import {cross} from 'react-icons-kit/icomoon/cross';
 import {checkmark} from 'react-icons-kit/icomoon/checkmark';
@@ -13,7 +14,8 @@ function TabContentThree(){
                     <span styled={{fontsize: '1.5rem'}}>
                         Choose One Plan and watch everything on Netlix
                     </span>
-                    <Button className="btn">TRY IT NOW</Button>
+                    <Link to="/chooseplan">
+                    <Button className="btn">TRY IT NOW</Button></Link>
                 </div>
                 {/* Tab Bottom Content */}
                 <div className="tab-bottom-content">

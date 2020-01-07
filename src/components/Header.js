@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Button} from './Button';
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import styled from "styled-components";
 import {Icon} from 'react-icons-kit';
 import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
@@ -21,9 +21,11 @@ class Header extends Component {
         <div className="header-content">
             <Title>For Your Top Dog</Title>
             <SubTitle >WATCH YOUR FAVORITE PUP MOVIE WITH YOUR PUP!</SubTitle>
+            <Link to="/chooseplan">
             <Button className="main-offer-btn" primary>TRY IT NOW 
             <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
             </Button>
+            </Link>
         </div>
       </HeaderContainer>
     );

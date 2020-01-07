@@ -2,6 +2,7 @@ import React from 'react';
 import Img from '../images/tab-1-pic.png';
 import styled from 'styled-components';
 import{Button } from './Button'
+import {Link } from 'react-router-dom';
 import {generateMedia} from 'styled-media-query'
 
 function TabContentOne(){
@@ -14,7 +15,8 @@ function TabContentOne(){
                     If you decided that Netflix isn't for you - no problem. No Commitments. Cancel online anytime. 
                 </span>
                 <br /> 
-                <Button style={{marginTop: '2rem'}}>Try It Now</Button>
+                <Link to="/chooseplan">
+                <Button style={{marginTop: '2rem'}}>Try It Now</Button></Link>
                 </div>
                 <img src={Img} />
             </div>

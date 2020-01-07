@@ -15,7 +15,7 @@ function TabContentTwo() {
           <span style={{ fontSize: "1.5rem" }}>
             Watch TV shows and movies anytime, anywhere — personalized for you.
           </span>
-          <Link className="btn" to="/choose-plan">
+          <Link className="btn" to="/chooseplan">
             <Button>try it now</Button>
           </Link>
         </div>
