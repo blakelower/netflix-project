@@ -26,61 +26,61 @@ class Footer extends Component {
         <div className="footer-columns">
           <ul>
             <li>
-              <Link>FAQ</Link>
+              <Link to="/">FAQ</Link>
             </li>
             <li>
-              <Link>Investor Relations</Link>
+              <Link to="/">Investor Relations</Link>
             </li>
             <li>
-              <Link>Ways to Watch</Link>
+              <Link to="/">Ways to Watch</Link>
             </li>
             <li>
-              <Link>Corporate Information</Link>
+              <Link to="/">Corporate Information</Link>
             </li>
             <li>
-              <Link>Netflix Originals</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link>Help Center</Link>
-            </li>
-            <li>
-              <Link>Jobs</Link>
-            </li>
-            <li>
-              <Link>Terms of Use</Link>
-            </li>
-            <li>
-              <Link>Contact Us</Link>
+              <Link to="/">Netflix Originals</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <Link>Account</Link>
+              <Link to="/">Help Center</Link>
             </li>
             <li>
-              <Link>Privacy</Link>
+              <Link to="/">Jobs</Link>
             </li>
             <li>
-              <Link>Speed Test</Link>
+              <Link to="/">Terms of Use</Link>
             </li>
             <li>
-              <Link>Netflix Originals</Link>
+              <Link to="/">Contact Us</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <Link>Media Center</Link>
+              <Link to="/">Account</Link>
             </li>
             <li>
-              <Link>Cookie Preferences</Link>
+              <Link to="/">Privacy</Link>
             </li>
             <li>
-              <Link>Legal Notices</Link>
+              <Link to="/">Speed Test</Link>
             </li>
             <li>
-              <Link>Corporate Information</Link>
+              <Link to="/">Netflix Originals</Link>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <Link to="/">Media Center</Link>
+            </li>
+            <li>
+              <Link to="/">Cookie Preferences</Link>
+            </li>
+            <li>
+              <Link to="/">Legal Notices</Link>
+            </li>
+            <li>
+              <Link to="/">Corporate Information</Link>
             </li>
           </ul>
           {/* Lang Btn */}

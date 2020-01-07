@@ -35,7 +35,7 @@ const Logo = styled.img`
   transform: translate(-50%, -50%);
   margin-left: 0;
   ${customMedia.lessThan('tablet')`
-  top: 45%;
+  top: -45%;
   left: 23%;
 `}
 `;

@@ -12,7 +12,7 @@ class Header extends Component {
       <HeaderContainer className="header-container">
         <div className="header-top">
           {/* <Logo src={logo} alt="Netflix" /> */}
-          <a href="https://fontmeme.com/netflix-font/"><Logo src="https://fontmeme.com/permalink/200105/8b9176f83255bf05070d0b0c44e708e0.png"/></a>
+          <a href="/"><Logo src="https://fontmeme.com/permalink/200105/8b9176f83255bf05070d0b0c44e708e0.png"/></a>
           <NavLink to="/login" className="signIn-btn">
             SignIn
           </NavLink>

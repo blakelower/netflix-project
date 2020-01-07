@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import FBlogo from "../../images/fb-logo.png";
 import { generateMedia } from 'styled-media-query';
 
-const regExp = RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)
+const regExp = RegExp(
+    /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+    );
 
 const initState = {
-  check: true ,
+  check: true,
   email: "",
   password: "",
   emailError: "",
