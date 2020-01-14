@@ -65,11 +65,12 @@ h4 {
   url(../images/pupmovies.jpg) no-repeat center center/cover;
 }
 
-@media(max-width: 640px){
+@media(max-width: 800px){
   .main-login-container{
     background: black;
   }
 }
+
 
 .main-login-container::after{
   content: '';
