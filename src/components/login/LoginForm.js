@@ -397,10 +397,6 @@ class LoginForm extends Component {
               </Link>
               <br />
               <br />
-              <span style={{ color: "#999" }}>New to Netflix?</span>
-              <Link to="/register" className="sign-up-text">
-                Sign Up Now
-              </Link>
             </div>
           </form>
         </div>
@@ -413,7 +409,7 @@ export default LoginForm;
 
 // Media
 const customMedia = generateMedia({
-    tablet: '640px'
+    tablet: '300px'
   });
   
   //Form Container
@@ -424,6 +420,7 @@ const customMedia = generateMedia({
     z-index: 5;
     ${customMedia.lessThan('tablet')`
       border-bottom: 0.9px solid #999;
+
   `}
     .form-container {
       background: rgba(0, 0, 0, 0.8);

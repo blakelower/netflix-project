@@ -21,11 +21,11 @@ class Header extends Component {
         <div className="header-content">
             <Title>For Your Top Dog</Title>
             <SubTitle >WATCH YOUR FAVORITE PUP MOVIE WITH YOUR PUP!</SubTitle>
-            <Link to="/chooseplan">
+            {/* <Link to="/chooseplan">
             <Button className="main-offer-btn" primary>TRY IT NOW 
             <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
             </Button>
-            </Link>
+            </Link> */}
         </div>
       </HeaderContainer>
     );
@@ -134,6 +134,8 @@ const Title = styled.h1`
   line-height: 1.1em;
   ${customMedia.lessThan('tablet')`
     font-size: 2.3rem;
+    position: relative;
+    top: -15rem;
   `}
 `;
 // SubTitle
@@ -145,6 +147,8 @@ const SubTitle = styled.h2`
   text-transform: uppercase;
   ${customMedia.lessThan('smTablet')`
    font-size: 1.4rem;
+   position: relative;
+   top: -3rem;
    margin: 0;
   `}
 `;

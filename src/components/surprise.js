@@ -2,7 +2,7 @@ import React, {Component}from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 import checkmarkLogo from '../images/Checkmark.png';
-import {Button} from '../components/Button';
+import {Button} from './Button';
 
 class  ChoosePlan extends Component {
     componentDidMount(){
@@ -26,15 +26,15 @@ class  ChoosePlan extends Component {
               {/* header content */}
               <div className="header-content">
                 <img className="checkmark-logo" src={checkmarkLogo} alt="checkmark logo"/>
-                <p>Step <strong> 1</strong> of <strong>3</strong>
+                <p>Step <strong> 2</strong> of <strong>3</strong>
                 </p>
-                <h2>Choose Your Plan.</h2>
+                <h2>Choose Your Pup</h2>
                 <div className="checked-list">
-                    <div className="bullet">No commitments, cancel anytime.</div>
-                    <div className="bullet"> Everything on Pupflix for one low price.</div>
-                    <div className="bullet">Unlimited pup films on all your devices.</div>
+                    <div className="bullet">You Made It This Far!</div>
+                    <div className="bullet">I Hope Youre Enjoying Pupflix!</div>
+                    <div className="bullet">When Logged in.. Remember to click on images</div>
                 </div>
-                <Button to="/plan2" >See the Plans</Button>
+                <Button>See the Plans</Button>
                 </div>
             </MainContainer>
           );
@@ -50,7 +50,6 @@ background: #fff;
 .header-top{
     background: #fff;
     height: 6rem;
-    /* border-bottom: 1px solid #e6e6e6; */
 }
 /* //header content */
 .header-content{
