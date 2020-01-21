@@ -1,14 +1,13 @@
 /* Global Variables */
-:root{
-  --main-red: rgba(211,9,19);
+:root {
+  --main-red: rgba(211, 9, 19);
   --main-red-hover: #e40914;
-  --main-dark: rgba(20,20,20);
-  --main-deep-dark: rgba(0,0,0);
-  --main-grey: rgba(153,153,153);
-
+  --main-dark: rgba(20, 20, 20);
+  --main-deep-dark: rgba(0, 0, 0);
+  --main-grey: rgba(153, 153, 153);
 }
 
-*{
+* {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -16,15 +15,15 @@
   padding: 0;
 }
 
-body{
-  font-family: 'Helvetica';
+body {
+  font-family: "Helvetica";
   -webkit-font-smoothing: antialiased;
   background: var(--main-dark);
   color: #fff;
   overflow-x: hidden;
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
 }
@@ -36,56 +35,56 @@ h4 {
   color: var(--main-white);
 }
 
-/*Header Section */ 
-.header-container{
+/*Header Section */
+.header-container {
   width: 100vw;
   height: 90vh;
   position: relative;
-  background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)),
-  url(../images/pupmovies.jpg) no-repeat center center/cover;
+  background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url(../images/pupmovies.jpg) no-repeat center center/cover;
 }
 
-.header-container::after{
-  content: '';
+.header-container::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
-  box-shadow: inset 4.375rem 3.125rem 11.875rem #000, inset -4.375rem -3.125rem -11.875rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 4.375rem 3.125rem 11.875rem #000,
+    inset -4.375rem -3.125rem -11.875rem;
 }
 /*****************************LOGIN*******************/
 
-.main-login-container{
+.main-login-container {
   width: 100%;
   height: 100%;
   position: relative;
-  background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0, 0.5)),
-  url(../images/pupmovies.jpg) no-repeat center center/cover;
+  background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(../images/pupmovies.jpg) no-repeat center center/cover;
 }
 
-@media(max-width: 800px){
-  .main-login-container{
+@media (max-width: 800px) {
+  .main-login-container {
     background: black;
   }
 }
 
-
-.main-login-container::after{
-  content: '';
+.main-login-container::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
-  box-shadow: inset 70px 50px 190px #000, 
-  inset -70px -50px -190px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 70px 50px 190px #000, inset -70px -50px -190px;
 }
 
-.header-top{
+.header-top {
   position: relative;
-  height:10rem;
+  height: 10rem;
   z-index: 1;
 }
+
