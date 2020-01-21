@@ -5,29 +5,34 @@
   fill: var(--main-grey);
 }
 /* Media Tab Nav #1 */
-@media (max-width: 900px) {
+@media (max-width: 300px) {
   .tab-icon-door {
     width: 2.4rem;
     height: 2.4rem;
+    overflow-x: hidden; 
   }
+
 }
 /*Tab Nav #2*/
 .tab-icon-devices {
   width: 9.6875rem;
   height: 9.6875rem;
   fill: var(--main-grey);
+  overflow-x: hidden; 
 }
 /* Media Tab Nav #1 */
 @media (max-width: 900px) {
   .tab-icon-devices {
     width: 8rem;
     height: 8rem;
+    overflow-x: hidden; 
   }
 }
 /*Tab Nav #3*/
 .tab-icon-price {
   width: 4.375rem;
   height: 4.375rem;
+  overflow-x: hidden;
   fill: var(--main-grey);
 }
 /* Media Tab Nav #1 */
@@ -57,6 +62,7 @@
 ul li:hover {
   color: #fff;
   cursor: pointer;
+  
 }
 ul li:hover svg path {
   fill: #fff;

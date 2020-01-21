@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Icon } from "react-icons-kit";
 import { iosWorld } from "react-icons-kit/ionicons/iosWorld";
 import { arrowSortedDown } from "react-icons-kit/typicons/arrowSortedDown";
-import {generateMedia} from 'styled-media-query';
+import media, {generateMedia} from 'styled-media-query';
 
 class Footer extends Component {
   state = {
@@ -84,23 +84,7 @@ class Footer extends Component {
             </li>
           </ul>
           {/* Lang Btn */}
-          <div className="lang-btn" onClick={this.handleToggle}>
-            <Icon icon={iosWorld} size={20} />
-            &nbsp;&nbsp;English&nbsp;&nbsp;
-            <Icon icon={arrowSortedDown} />
-          </div>
         </div>
-        {/* Toggle Lang content */}
-        {this.state.langContent && (
-        <div className="lang-toggle">
-          <ul>
-            <li>English</li>
-          </ul>
-          <ul>
-            <li>French</li>
-          </ul>
-        </div>
-        )}
         {/* <span style={{ marginLeft: "15%", fontSize: "0.9rem" }}>
           Netflix America
         </span> */}
@@ -113,7 +97,7 @@ export default Footer;
 //Media
 const customMedia = generateMedia({
   tablet: "740px",
-
+  smTablet: '600px'
 });
 
 const FooterContainer = styled.footer`

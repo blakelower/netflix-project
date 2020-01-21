@@ -82,8 +82,8 @@ export default TabContentThree;
 
 //Media
 const customMedia = generateMedia({
-    lgDesktop: '1350px',
-    mdDesktop: '1000px'
+    lgDesktop: '350px',
+    mdDesktop: '300px'
 })
 
 const TabContainer = styled.div`

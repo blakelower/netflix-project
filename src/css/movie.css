@@ -71,7 +71,7 @@
   
   
   .main-nav {
-      display: flex;
+    grid-area: mn;
     padding: 0 30px 0 20px;
   }
   
@@ -99,7 +99,6 @@
   .sub-nav a:hover {
     color: var(--dark);
   }
-  
   
   /* MAIN CONTIANER */
   .main-container {
