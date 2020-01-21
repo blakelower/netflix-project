@@ -12,11 +12,10 @@ const Movies = () => {
       </div>
 
        <nav className="main-nav">
-        <a href="/">Home</a>
         <a href="#myList">Popular on Pupflix</a>
-        <a href="#tvShows">TV Shows</a>
-        <a href="#movies">Movies</a>
-        <a href="#originals">Originals</a>
+        <a href="#tvShows">Pup Shows</a>
+        <a href="#movies">Action Pup Movies</a>
+        <a href="#originals">Pupflix Originals</a>
       </nav>
       <div>
         <h1 id="myList">Popular on Pupflix</h1>
@@ -229,7 +228,7 @@ const Movies = () => {
                 <a href="/">Github</a>
               </li>
               <li>
-                <a href="/">Click Here</a>
+                <a href="https://github.com/blakelower/netflix-project">Click Here</a>
               </li>
             </ul>
           </div>
