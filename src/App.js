@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import ChoosePlan from "./pages/ChoosePlan";
 import movies from './components/movies'
 
+
 function App() {
   return (
     <div>

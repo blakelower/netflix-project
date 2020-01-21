@@ -291,6 +291,7 @@ import history from '../login/history';
 import movies from '../movies';
 import { generateMedia } from 'styled-media-query';
 
+
 const regExp = RegExp(
     /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/
     );

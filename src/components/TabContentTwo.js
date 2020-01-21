@@ -23,7 +23,7 @@ function TabContentTwo() {
         <div className="tab-bottom-content">
           {/* Tv Image Container */}
           <div>
-            <img src={dogontv} alt="tv" />
+            <img id="tv" src={dogontv} alt="tv" />
             <h3>Watch on your TV</h3>
             <p>
               Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
@@ -32,13 +32,13 @@ function TabContentTwo() {
           </div>
           {/* Tablet Image Container */}
           <div>
-            <img src={dogontab} alt="tablet" />
+            <img id="tab" src={dogontab} alt="tablet" />
             <h3>Watch on your Tablet</h3>
             <p>Download your shows to watch on the go.</p>
           </div>
           {/* Macbook Image Container */}
           <div>
-            <img src={dogonlap} alt="macbook" />
+            <img id="lap" src={dogonlap} alt="macbook" />
             <h3>Watch on your Laptop</h3>
             <p>
               Stream unlimited movies and TV shows on your phone, tablet,
@@ -77,6 +77,15 @@ const TabContainer = styled.div`
       text-align: center;
       row-gap: 1.5rem;
     `}
+  }
+  #tab{
+    pointer-events:none;
+  }
+  #lap{
+    pointer-events:none;
+  }
+  #tv{
+    pointer-events:none;
   }
   img {
     width: 100%;

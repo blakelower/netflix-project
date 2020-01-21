@@ -20,7 +20,7 @@ function TabContentOne() {
             <Button style={{ marginTop: "2rem" }}>Try It Now</Button>
           </Link>
         </div>
-        <img src={Img} />
+        <img id="one" src={Img}/>
       </div>
     </TabContentContainer>
   );
@@ -41,6 +41,11 @@ const TabContentContainer = styled.div`
     margin: 0 10%;
   }
 
+
+  #one{
+    pointer-events:none
+  }
+  
   img {
     width: 31.875rem;
     ${customMedia.lessThan("smDesktop")`
