@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 import checkmarkLogo from '../images/Checkmark.png';
 import {Button} from '../components/Button';
+import history from '../components/login/history';
 
 class  ChoosePlan extends Component {
     componentDidMount(){
@@ -34,7 +35,7 @@ class  ChoosePlan extends Component {
                     <div className="bullet"> Everything on Pupflix for one low price.</div>
                     <div className="bullet">Unlimited pup films on all your devices.</div>
                 </div>
-                <Button to="/plan2" >See the Plans</Button>
+                <Button type="submit" onClick={() => history.push('/plan2')}>See the Plans</Button>
                 </div>
             </MainContainer>
           );

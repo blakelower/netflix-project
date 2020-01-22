@@ -223,11 +223,11 @@ footer {
   }
 }
 
+
 @media (max-width: 500px) {
   .wrapper {
     font-size: 15px;
   }
-  
   header {
     margin: 0;
     padding: 20px 0 0 0;

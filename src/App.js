@@ -6,7 +6,7 @@ import Main from './pages';
 import Login from './pages/Login';
 import ChoosePlan from "./pages/ChoosePlan";
 import movies from './components/movies';
-import plan2 from './components/plan2';
+import plan2 from './pages/plan2'
 import surprise from './components/surprise';
 function App() {
   return (
