@@ -21,15 +21,6 @@ body {
 
 
 
-img {
-  max-width: 100%;
-  transition: transform .2s
-}
-img:hover{
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5); 
-}
-
 h1 {
   padding-top: 60px;
 }
@@ -122,20 +113,27 @@ header {
 
 .box {
   display: grid;
-  grid-gap: -90px;
+  padding: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  grid-gap: 20px;
   grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+video{
+  padding: 10px;
+  margin: 20px;
 }
 
 .box a {
   transition: 1s transform;
 }
 
-.box a:hover {
+/* .box a:hover {
   transition: transform 0.3s;
   -ms-transform: scale(1.4);
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
-}
+} */
 
 .box img {
   border-radius: 2px;
@@ -268,10 +266,10 @@ footer {
     text-align: center;
   }
 
-  .box:hover {
+  /* .box:hover {
     -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
-  }
+    /* transform: scale(1.5);
+  } */ */
 
   .logos {
     display: grid;
