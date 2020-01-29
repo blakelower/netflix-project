@@ -20,7 +20,7 @@ function TabContentOne() {
             <Button style={{ marginTop: "2rem" }}>Try It Now</Button>
           </Link>
         </div>
-        <img id="one" src={Img}/>
+        <img id="one" src={Img} alt=""/>
       </div>
     </TabContentContainer>
   );
