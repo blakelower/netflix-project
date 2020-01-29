@@ -6,7 +6,7 @@ import Main from './pages';
 import Login from './pages/Login';
 import ChoosePlan from "./pages/ChoosePlan";
 import movies from './components/movies';
-import plan2 from './pages/plan2'
+import plantwo from './pages/plantwo';
 import surprise from './components/surprise';
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       <Route path="/login" component={Login} />
       <Route path="/movies" component={movies} />
       <Route path="/ChoosePlan" component={ChoosePlan} />
-      <Route path="/plan2" component={plan2} />
-      <Route path="surprise" component={surprise} />
+      <Route path="/plantwo" component={plantwo} />
+      <Route path="/surprisesurprise" component={surprise} />
       </Switch>
     </div>
   );

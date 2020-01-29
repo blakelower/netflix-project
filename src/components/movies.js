@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "../css/movie.css";
 
 export default function Movies() {
@@ -13,12 +14,15 @@ export default function Movies() {
   return (
     <div>
       <div className="header-top">
-        <a href="/" id="logo">
+      <NavLink to="/" className="btn-signIn-btn">
+            Logout
+          </NavLink>
+        <Link to="/" id="logo">
           <img
-            src="https://fontmeme.com/permalink/200105/8b9176f83255bf05070d0b0c44e708e0.png"
-            alt=""
-          />
-        </a>
+            src="https://fontmeme.com/permalink/200107/8b9176f83255bf05070d0b0c44e708e0.png"
+            alt="netflix-font"
+          ></img>
+        </Link>
       </div>
       <nav className="main-nav">
         <a href="#myList">Popular on Pupflix</a>
@@ -124,9 +128,8 @@ export default function Movies() {
             onMouseEnter={handlePlay}
             onMouseLeave={handlePause}
           ></video>
-
           <video
-            src=""
+            src="https://ia800708.us.archive.org/28/items/IdoAngelVipovipopilotwmv/vipopilot_512kb.mp4"
             poster="https://i.ytimg.com/vi/1qrXbnFUumQ/maxresdefault.jpg"
             width="230"
             onMouseEnter={handlePlay}

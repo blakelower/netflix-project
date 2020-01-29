@@ -27,7 +27,7 @@ class  ChoosePlan extends Component {
               {/* header content */}
               <div className="header-content">
                 <img className="checkmark-logo" src={checkmarkLogo} alt="checkmark logo"/>
-                <p>Step <strong> 1</strong> of <strong>3</strong>
+                <p>Step <strong> 2</strong> of <strong>3</strong>
                 </p>
                 <h2>Choose Your Plan.</h2>
                 <div className="checked-list">
@@ -35,7 +35,7 @@ class  ChoosePlan extends Component {
                     <div className="bullet"> Everything on Pupflix for one low price.</div>
                     <div className="bullet">Unlimited pup films on all your devices.</div>
                 </div>
-                <Button type="submit" onClick={() => history.push('/plantwo')}>See the Plans</Button>
+                <Button type="submit" onClick={() => history.push('/')}>See the Plans</Button>
                 </div>
             </MainContainer>
           );
