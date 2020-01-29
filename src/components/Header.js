@@ -1,31 +1,24 @@
 import React, { Component } from "react";
-import {Button} from './Button';
-import { NavLink,Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import {Icon} from 'react-icons-kit';
-import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
-import {generateMedia} from 'styled-media-query';
+import { generateMedia } from "styled-media-query";
 
 class Header extends Component {
   render() {
     return (
       <HeaderContainer className="header-container">
         <div className="header-top">
-          {/* <Logo src={logo} alt="Netflix" /> */}
-          <a href="/"><Logo src="https://fontmeme.com/permalink/200105/8b9176f83255bf05070d0b0c44e708e0.png"/></a>
+          <a href="/">
+            <Logo src="https://fontmeme.com/permalink/200105/8b9176f83255bf05070d0b0c44e708e0.png" />
+          </a>
           <NavLink to="/login" className="signIn-btn">
             SignIn
           </NavLink>
         </div>
         {/* Header Content */}
         <div className="header-content">
-            <Title>For Your Top Dog</Title>
-            <SubTitle >WATCH YOUR FAVORITE PUP MOVIE WITH YOUR PUP!</SubTitle>
-            {/* <Link to="/chooseplan">
-            <Button className="main-offer-btn" primary>TRY IT NOW 
-            <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
-            </Button>
-            </Link> */}
+          <Title>For Your Top Dog</Title>
+          <SubTitle>WATCH YOUR FAVORITE PUP MOVIE WITH YOUR PUP!</SubTitle>
         </div>
       </HeaderContainer>
     );
@@ -34,12 +27,11 @@ class Header extends Component {
 export default Header;
 
 const customMedia = generateMedia({
-  lgDesktop: '1350px',
-  mdDesktop: '1150px',
-  tablet: '960px',
-  smTablet: '740px'
-})
-
+  lgDesktop: "1350px",
+  mdDesktop: "1150px",
+  tablet: "960px",
+  smTablet: "740px"
+});
 
 // Logo
 const Logo = styled.img`
@@ -50,7 +42,7 @@ const Logo = styled.img`
   left: 50%;
   transform: translate(-50%, -50%);
   margin-left: 0;
-  ${customMedia.lessThan('tablet')`
+  ${customMedia.lessThan("tablet")`
     left: 20%;
   `}
 `;
@@ -58,7 +50,7 @@ const HeaderContainer = styled.header`
 .Icon svg {
   vertical-align: bottom !important;
   margin-left: 1.5rem;
-  ${customMedia.lessThan('smTablet')`
+  ${customMedia.lessThan("smTablet")`
     display: none !important;
   `}
 }
@@ -78,7 +70,7 @@ const HeaderContainer = styled.header`
     &:hover {
       background: #d30913;
     }
-    ${customMedia.lessThan('smTablet')`
+    ${customMedia.lessThan("smTablet")`
       margin-top: 1.25rem;
       right: 5%;
     `}
@@ -100,26 +92,26 @@ const HeaderContainer = styled.header`
     text-align: center;
     flex-direction: column;
     z-index: 2;
-    ${customMedia.lessThan('smTablet')`
+    ${customMedia.lessThan("smTablet")`
       display: grid;
       grid-template-rows: repeat(3, 60px);
       margin-top: 8rem;
     `}
     // Lg Main
     .main-offer-btn {
-      ${customMedia.lessThan('lgDesktop')`
+      ${customMedia.lessThan("lgDesktop")`
       margin: 0 -33%;
       margin-top: -1000%;
       font-size: 1.2rem;
     `}
     
-      ${customMedia.lessThan('mdDesktop')`
+      ${customMedia.lessThan("mdDesktop")`
       margin: 0 25%;
       margin-top: -50%;
       font-size: 1.5rem;
       `}
     
-      ${customMedia.lessThan('tablet')`
+      ${customMedia.lessThan("tablet")`
         margin: 0 20%;
         font-size: 1.3rem;
       `}
@@ -132,7 +124,7 @@ const Title = styled.h1`
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.1em;
-  ${customMedia.lessThan('tablet')`
+  ${customMedia.lessThan("tablet")`
     font-size: 2.3rem;
     position: relative;
     top: -15rem;
@@ -145,7 +137,7 @@ const SubTitle = styled.h2`
   line-height: 1.25em;
   margin: 0 0 1.875rem;
   text-transform: uppercase;
-  ${customMedia.lessThan('smTablet')`
+  ${customMedia.lessThan("smTablet")`
    font-size: 1.4rem;
    position: relative;
    top: -3rem;
@@ -177,7 +169,7 @@ const SubTitle = styled.h2`
 //             <Title>For Your Top Dog</Title>
 //             <SubTitle >WATCH YOUR FAVORITE PUP MOVIE WITH YOUR PUP!</SubTitle>
 //             <Link to="/chooseplan">
-//             <Button className="main-offer-btn" primary>TRY IT NOW 
+//             <Button className="main-offer-btn" primary>TRY IT NOW
 //             <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
 //             </Button>
 //             </Link>
@@ -206,7 +198,7 @@ const SubTitle = styled.h2`
 //   margin-left: 0;
 //   ${customMedia.lessThan('tablet')`
 //     left: 20%;
-//     overflow-x: hidden; 
+//     overflow-x: hidden;
 //   `}
 // `;
 // const HeaderContainer = styled.header`
@@ -215,7 +207,7 @@ const SubTitle = styled.h2`
 //   margin-left: 1.5rem;
 //   ${customMedia.lessThan('smTablet')`
 //     display: none !important;
-//     overflow-x: hidden; 
+//     overflow-x: hidden;
 //   `}
 // }
 //   .signIn-btn {
@@ -230,7 +222,7 @@ const SubTitle = styled.h2`
 //     position: absolute;
 //     translate: transform(-50%, -50%);
 //     cursor: pointer;
-//     transition: background 0.2s ease-in; 
+//     transition: background 0.2s ease-in;
 //     &:hover {
 //       background: #d30913;
 //     }
@@ -238,7 +230,7 @@ const SubTitle = styled.h2`
 //       margin-top: 1.5rem;
 //       right: 5%;
 //       z-index: -1;
-//       overflow-x: hidden; 
+//       overflow-x: hidden;
 //     `}
 //   }
 //   // Header Top
@@ -268,19 +260,19 @@ const SubTitle = styled.h2`
 //       ${customMedia.lessThan('lgDesktop')`
 //       margin: 0 33%;
 //       font-size: 1rem;
-//       overflow-x: hidden; 
+//       overflow-x: hidden;
 //     `}
-    
+
 //       ${customMedia.lessThan('mdDesktop')`
 //       margin: 0 25%;
 //       font-size: 1.5rem;
-//       overflow-x: hidden; 
+//       overflow-x: hidden;
 //       `}
-    
+
 //       ${customMedia.lessThan('tablet')`
 //         margin: 0 20%;
 //         font-size: 1.3rem;
-//         overflow-x: hidden; 
+//         overflow-x: hidden;
 //       `}
 //     }
 //   }
