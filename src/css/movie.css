@@ -231,6 +231,10 @@ footer {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
   }
 
+  video{
+    margin: 50px;
+    padding: 2px;
+  }
   .sub-links ul {
     display: grid;
     grid-gap: 20px;
@@ -280,7 +284,7 @@ footer {
 
   .box {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: -90px;
     transition: transform 0.2s;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;

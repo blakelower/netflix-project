@@ -23,7 +23,7 @@ class Footer extends Component {
         <div className="footer-columns">
           <ul>
             <li>
-              <Link to="/">FAQ</Link>
+              <Link to="https://github.com/blakelower/netflix-project">Source Code</Link>
             </li>
             <li>
               <Link to="/">Investor Relations</Link>
