@@ -1,15 +1,21 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../css/movie.css";
+import ReactTouchEvents from 'react-touch-events';
 
-export default function Movies() {
+function Movies () {
   const handlePlay = e => {
     e.target.play();
   };
-
   const handlePause = e => {
     e.target.pause();
   };
+
+  const handleTap = e => {
+    console.log('works')
+    e.target.onTap();
+  }
+
 
   return (
     <div>
@@ -33,13 +39,18 @@ export default function Movies() {
       <div>
         <h1 id="myList">Popular on Pupflix</h1>
         <div className="box">
+          <ReactTouchEvents 
+            onTap={handleTap}
+          >
           <video
             src="https://ia800300.us.archive.org/17/items/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
             poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
             width="230"
             onMouseEnter={handlePlay}
             onMouseLeave={handlePause}
-          ></video>
+          >
+          </video>
+          </ReactTouchEvents>
           <video
             src="https://ia800301.us.archive.org/7/items/BigBuckBunnyProjectile/big_buck_bunny_projectile_512kb.mp4"
             poster="https://i.ytimg.com/vi/yUQM7H4Swgw/maxresdefault.jpg"
@@ -244,5 +255,7 @@ export default function Movies() {
         </div>
       </div>
     </div>
-  );
-}
+    );
+  }
+
+export default Movies;
