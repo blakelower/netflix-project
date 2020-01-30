@@ -40,7 +40,7 @@ function Movies () {
         <h1 id="myList">Popular on Pupflix</h1>
         <div className="box">
           <ReactTouchEvents 
-            onTap={handleTap}
+            handleTap={handleTap}
           >
           <video
             src="https://ia800300.us.archive.org/17/items/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
