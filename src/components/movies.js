@@ -263,8 +263,8 @@ function Movies () {
             onMouseEnter={handlePlay}
             onMouseLeave={handlePause}
           ></video>
-          {/* </ReactTouchEvents>
-          <ReactTouchEvents
+          {/* </ReactTouchEvents> */}
+          {/* <ReactTouchEvents
           handleTap={handleTap}
           > */}
           <video
