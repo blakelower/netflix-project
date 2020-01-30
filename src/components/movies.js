@@ -13,6 +13,7 @@ function Movies () {
 
   const handleTap = e => {
     console.log('works')
+    e.target.paused ? handlePlay(e) : handlePause(e);
   }
 
 
