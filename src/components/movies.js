@@ -13,7 +13,6 @@ function Movies () {
 
   const handleTap = e => {
     console.log('works')
-    e.target.onTap();
   }
 
 
